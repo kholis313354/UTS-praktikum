@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My navbar responsive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Passion+One&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    <nav>
+        <div class="logo">
+            <h4>PT.BOLTZ INDONESIA</h4>
+        </div>
+        <ul>
+            <li><a href="">ABOUT </a></li>
+            <li><a href="">PROFILE</a></li>
+            <li><a href="">RESUME</a></li>
+            <li><a href="">GALLERY</a></li>
+            <li><a href="">KONTAK</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <script>
+            $(window).on("load", function(){
+                $(".loader-container").fadeOut(4000);
+            });
+    </script>
+    <!-- <script>
+        onload = function() {
+            let id =document.getElementById('loading')
+            let loading =document.createElement("")
+            loading.textContent ="loading";
+            id.appendChild("loading")
+            
+
+            setTimeout(() => {
+
+            }, 9000)
+            
+        }
+        
+    </script> -->
+    <script src="script.js"></script>
+</body>
+</html>
